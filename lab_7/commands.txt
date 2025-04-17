@@ -1,0 +1,27 @@
+docker pull hello-world
+
+docker run hello-world
+
+docker run it ubuntu
+
+exit
+
+docker stop <id>
+
+
+
+docker network ls.
+
+docker network create mongo-network.
+
+docker network ls.
+
+
+
+docker run-d-p27017:27017 --name mongo --network mong0 -network -e MONGO_INITDB_ROOT_USERNAME =admin -e MONGO_INITDB_ROOT_PASSWORD=admin mongo
+
+docker network inspect mang0-network        // to see which containers are connected to mango network
+
+docker run -d-p8081:8081 --name mang0-express --network mongo-network -e ME_CONFIG_MONGODB_ADMINUSERNAME = admin -e ME_CONFIG_MONGODB_ADMIN PASSWORD = admin-e ME_CONFIG_MONGODB_URL = "mongodb:// admin: admin@mongo:27017//mongo_express.
+
+mongo-express is an admin interface to connect to the MongoDB database
